@@ -1,0 +1,9 @@
+make[1]: Entering directory '/build/modem_v7'
+CC core/dsp_init.c
+core/dsp_init.c:14:2: warning: #warning "DSP freq hardcoded for testing"
+CC drivers/antenna/rf_tuner.c
+drivers/antenna/rf_tuner.c:88:14: error: 'rx_gain_table' undeclared (first use in this function)
+drivers/antenna/rf_tuner.c:88:14: note: each undeclared identifier is reported only once
+LD modem_fw.elf
+make[1]: *** [Makefile:102: drivers/antenna/rf_tuner.o] Error 1
+make[1]: Leaving directory '/build/modem_v7'
